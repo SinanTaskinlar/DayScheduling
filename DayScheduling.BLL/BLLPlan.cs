@@ -26,14 +26,25 @@ namespace DayScheduling.BLL
             Dictionary<string, string> MustDoList = new Dictionary<string, string>();
             Place currentPlace = new Place();
             LatLong firstItemLatLong = new LatLong();
-            for (int i = 0; i < param.categoryGroupNames.Count && param.categoryGroupNames != null; i++)
+            if(param.categoryGroupNames == null || param.categoryGroupNames.ElementAt(0) == "Generic")
             {
-                MustDoList.Add(param.categoryGroupNames.ElementAt(i), param.categoryGroupNames.ElementAt(i));
+                param.FoodCategory = "10";
+                MustDoList.Add("culture", "culture");
+                MustDoList.Add("fun", "fun");
+                MustDoList.Add("Shopping", "Shopping");
             }
-            if (!string.IsNullOrEmpty(param.FoodCategory))
-                MustDoList.Add("food", param.FoodCategory);
-            if (!string.IsNullOrEmpty(param.AlcoholCategory))
-                MustDoList.Add("alcohol", param.AlcoholCategory);
+            else
+            {
+                for (int i = 0; i < param.categoryGroupNames.Count && param.categoryGroupNames != null; i++)
+                {
+                    MustDoList.Add(param.categoryGroupNames.ElementAt(i), param.categoryGroupNames.ElementAt(i));
+                }
+                if (!string.IsNullOrEmpty(param.FoodCategory))
+                    MustDoList.Add("food", param.FoodCategory);
+                if (!string.IsNullOrEmpty(param.AlcoholCategory))
+                    MustDoList.Add("alcohol", param.AlcoholCategory);
+            }
+
             Random rnd = new Random();
             vmDayByDayPlan model = new vmDayByDayPlan();
             model.Province = Enum.GetName(typeof(Provinces), param.ProvinceId);

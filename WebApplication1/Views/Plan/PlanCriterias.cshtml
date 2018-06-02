@@ -9,15 +9,6 @@
     <meta name="_csrf_parameter" content="_csrf" />
     <meta name="_csrf_header" content="X-CSRF-TOKEN" />
     <meta name="_csrf" content="fabbdc7e-77ee-40cb-a6f3-8ebf1f728bb3" />
-    @*<link rel="apple-touch-icon" sizes="57x57" href="https://s.inspirock.com/images/meta/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="https://s.inspirock.com/images/meta/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="https://s.inspirock.com/images/meta/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="https://s.inspirock.com/images/meta/apple-touch-icon-76x76.png">
-        <link rel="icon" type="image/png" href="https://s.inspirock.com/images/meta/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="https://s.inspirock.com/images/meta/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="https://s.inspirock.com/images/meta/favicon-16x16.png" sizes="16x16">
-        <link rel="shortcut icon" href="https://s.inspirock.com/images/meta/favicon.ico">
-        <link rel="manifest" href="https://s.inspirock.com/images/meta/manifest.json">*@
     <link rel="Shortcut Icon" href="~/img/logo.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-config" content="https://s.inspirock.com/images/meta/browserconfig.xml">
@@ -327,6 +318,31 @@
 
 <script type="text/javascript">
 
+    $('#newplan-category19').click(function () {
+        debugger;
+        if ($('#newplan-category19').prop('checked')) {
+            $('#newplan-interestCulture').attr('checked', false);
+            $('#newplan-interestOutdoor').attr('checked', false);
+            $('#newplan-interestUnwind').attr('checked', false);
+            $('#newplan-interestFun').attr('checked', false);
+            $('#newplan-category10').attr('checked', false);
+            $('#newplan-category4').attr('checked', false);
+            $('#newplan-interestCulture').attr("disabled", true);
+            $('#newplan-interestOutdoor').attr("disabled", true);
+            $('#newplan-interestUnwind').attr("disabled", true);
+            $('#newplan-interestFun').attr("disabled", true);
+            $('#newplan-category10').attr("disabled", true);
+            $('#newplan-category4').attr("disabled", true);
+        }
+        else {
+            $('#newplan-interestCulture').attr("disabled", false);
+            $('#newplan-interestOutdoor').attr("disabled", false);
+            $('#newplan-interestUnwind').attr("disabled", false);
+            $('#newplan-interestFun').attr("disabled", false);
+            $('#newplan-category10').attr("disabled", false);
+            $('#newplan-category4').attr("disabled", false);
+        }
+    })
 
             /* <![CDATA[ */
             var google_conversion_id = 1035570068;
@@ -400,6 +416,7 @@
                 }
             });
 </script>
+
 
 <script src="https://s.inspirock.com/3.2.11/res/js/common.js"></script>
 <script type="text/javascript">

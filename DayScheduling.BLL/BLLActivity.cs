@@ -69,14 +69,21 @@ namespace DayScheduling.BLL
             if (PlaceType == "3" || PlaceType == "11" || PlaceType == "12" || PlaceType == "13" || PlaceType == "15" || PlaceType == "30")
             {
                 if (PlaceType == "3" && OldActivityStartTime < new TimeSpan(16, 0, 0))
-                    return null;
                 activity = getFoodActivity(param, PlaceType, "food");
+                activity.StartTime = new TimeSpan(16, 0, 0);
             }
             else if (PlaceType == "40" || PlaceType == "50" || PlaceType == "60")
             {
-                if (((PlaceType == "40" || PlaceType == "50") && OldActivityStartTime < new TimeSpan(16, 0, 0)) || (PlaceType == "60" && (OldActivityStartTime < new TimeSpan(20, 0, 0))))
-                    return null;
-                activity = getAlcoholActivity(param, PlaceType, "alcohol");
+                if (((PlaceType == "40" || PlaceType == "50") && OldActivityStartTime < new TimeSpan(16, 0, 0)))
+                {
+                    activity = getAlcoholActivity(param, PlaceType, "alcohol");
+                    activity.StartTime = new TimeSpan(16, 0, 0);
+                } 
+                else if((PlaceType == "60" && (OldActivityStartTime < new TimeSpan(20, 0, 0))))
+                {
+                    activity = getAlcoholActivity(param, PlaceType, "alcohol");
+                    activity.StartTime = new TimeSpan(20, 0, 0);
+                }
             }
             else if (PlaceType == "10")
             {

@@ -36,7 +36,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             else if (pList.Count != 0)
             {
@@ -57,7 +57,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             else if (pList.Count != 0)
             {
@@ -78,7 +78,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             else if (pList.Count != 0)
             {
@@ -100,7 +100,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -121,7 +121,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -144,7 +144,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -166,7 +166,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -190,7 +190,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -211,7 +211,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -232,7 +232,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -253,7 +253,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -274,7 +274,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -296,7 +296,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -317,7 +317,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -338,7 +338,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {
@@ -359,7 +359,7 @@ namespace DayScheduling.Data
             List<Place> pList = res.ToList<Place>();
             if (pList.Count != 0 && !string.IsNullOrEmpty(rate))
             {
-                return res.FirstOrDefault();
+                return pList.FirstOrDefault();
             }
             if (pList.Count != 0)
             {

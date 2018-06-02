@@ -20,28 +20,11 @@ namespace DayScheduling.Entities.Plan
         Balçova = 4,
         Çeşme = 5,
         Urla = 6,
-        Narlıdere = 7,
         Karşıyaka = 8,
-        Bostanlı = 9,
-        Mavişehir = 10,
         Güzelbahçe = 11,
         Gaziemir = 12,
         Buca = 13,
-        Bayraklı = 14,
-        Foça = 15,
-        Seferihisar = 16,
-        Karabağlar = 17,
-        Karaburun = 18,
-        Selçuk = 19,
-        Ödemiş = 20,
-        Bergama = 21,
-        Tire = 22,
-        Kemalpaşa = 23,
-        Çiğli = 24,
-        Dikili = 25,
-        Üçyol = 26,
         Güzelyalı = 27,
-        Özdere = 28
     }
     public enum FoodCategories
     {
